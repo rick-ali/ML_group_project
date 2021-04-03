@@ -1,0 +1,82 @@
+.homepage >h1 {
+      text-align: center;
+    margin: 10px;
+      padding 5px;
+      background-color: lightblue;
+    }
+    .learn{
+      margin: 0;
+      padding: 5px;
+      background-color: lightblue;
+}
+.learn >h6 {
+  margin: 10px;
+  padding: 5px;
+  border: 10px;
+  text-align: center;
+
+}
+      .footer {
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+
+        text-align: center;
+        padding: 3px;
+        background-color: mediumpurple;
+        color: black;
+      }
+      .emailsize > h3 {
+        color:black
+
+
+      }
+
+.right {
+  text-align: right;
+
+}
+.left{
+  text-align: right;
+}
+img1 {
+  float: left;
+}
+img2 {
+  float: right;
+
+}
+*, *:before: *after {
+  box-sizing: inherit;
+}
+body {
+  margin-top 300px;
+  text allign: center;
+}
+.polynomialButton{
+  color: lightblue;
+  font-family: "arial";
+  font-weight: 100;
+  font-size: 40px;
+  text-align:  center;
+  border: solid 5px mediumpurple;
+  border-radius: 500px;
+  padding: 10px 80px;
+  transition duration: 200ms;
+  position: fixed;
+  top: 40%;
+  left:36%;
+  background-color: mediumpurple;
+
+
+
+}
+
+.polynomialButton:hover {
+  background-color: lightblue;
+  color: mediumpurple;
+}
+
+.wrapper{
+  text-align: center;
+}

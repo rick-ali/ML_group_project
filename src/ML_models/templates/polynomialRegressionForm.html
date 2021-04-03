@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Polynomial Regression</h1>
+
+<h2>How this model works</h2>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aspernatur, vero iusto esse rem nobis qui totam eum eos praesentium autem impedit? Ex animi laboriosam, incidunt possimus corrupti non ea consequatur, excepturi dolores iusto voluptate quos quo suscipit voluptas modi sint. Maxime sunt aliquam, excepturi labore itaque ex deserunt reiciendis sit doloribus quos numquam quas nesciunt aperiam impedit? Et aliquid nulla veniam officiis! Quibusdam, id tempore laborum ratione dolores, tempora enim aperiam inventore ab dolore modi corrupti corporis labore soluta vero vitae architecto iusto magnam. Quaerat molestiae dolor delectus numquam cum esse molestias, reprehenderit eos! Reiciendis eveniet nobis perspiciatis ad.</p>
+
+<u>If you experience any problems, please check the FAQ first!</u>
+
+<br>
+<br>
+
+
+<h2> Please enter your parameters </h2>
+
+<!--This form looks very bad :( sorry for that-->
+<form method="POST" action=""> {% csrf_token %}
+  <label>Degree: </label>
+  <input type="number" name="degree", min="1", max="10", step="1", value="2"><br>
+  <label>Test Size: </label>
+  <input type="number" name="test_size", min="0.1", max="1", step="0.1", value="0.2"> <br>
+  <label>Interaction Only: </label>
+  <input name="interaction_only" type="hidden"   value="0" /> <!--Default is false-->
+  <input name="interaction_only" type="checkbox" value="1" /> <br>
+  <label>Include Bias: </label>
+  <input type="checkbox" name="include_bias", checked="checked"> <br>
+  <label>Normalize: </label>
+  <input name="normalize" type="hidden"   value="0" /> <!--Default is false-->
+  <input name="normalize" type="checkbox" value="1" /> <br>
+  <input type="submit" value="Submit">
+</form>
+
+<br>
+
+<h2> Text Output </h2>
+
+<!--Things to be included in output: meanAbsoluteError, residualSumOfSquares, R2score, -->
+<!--You can get, for instance, R2score with: {{ R2score }}-->
+<br>
+<br>
+<!--Maybe try to align this?-->
+<p>
+    Mean absolute error: {{ meanAbsoluteError }} <br>
+Residual sum of squares: {{ residualSumOfSquares }} <br>
+               R2 score: {{ R2score }}
+</p>
+<br>
+<br>
+
+
+<textarea rows="15" cols="75">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore numquam unde doloremque quos! Nisi provident eius est ab odit. Nostrum tempore, sequi pariatur id consequuntur necessitatibus impedit tenetur! Mollitia quisquam eveniet inventore molestiae fugiat. Nemo, cupiditate! Repudiandae dolorum voluptatem facere updog eveniet explicabo doloremque in dolor laboriosam facilis magni similique debitis dicta, doloribus impedit, accusamus officiis corrupti exercitationem ipsa obcaecati atque ea nisi? Ipsam hic porro vitae nulla voluptas quidem!
+</textarea>
+
+
+{% endblock %}

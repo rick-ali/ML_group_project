@@ -1,0 +1,59 @@
+/* Sidebar/left column */
+.sidenav {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #56E3D4; /* Greenish background color */
+  padding: 20px; /* Some padding */
+}
+
+
+a:link {
+  color: rgb(80, 45, 161);
+}
+
+a:visited {
+  color: rgb(252, 121, 33);
+}
+
+a:hover {
+  color: rgb(29, 201, 231);
+}
+
+a:active {
+  color: rgb(31, 31, 153);}
+
+.container {
+
+font-family: "Verdana";
+font-size: 18px;
+display:grid;
+grid-template-columns:
+1fr 310px 1fr;
+                                        grid-template-rows:
+22px
+65px
+65px
+65px
+65px
+65px
+65px
+1fr;
+
+grid-template-areas:
+". . ."
+". object1 ."
+". object2 ."
+". object3 ."
+". object4 ."
+". object5 ."
+". object6 ."
+". . .";
+
+
+}
+
+.object1 {grid-area:object1; display: flex; align-items: center; justify-content: center; border-left: 4px solid rgb(174, 138, 190); background-color: rgb(241, 238, 238); margin: 6px;}
+.object2 {grid-area:object2; display: flex; align-items: center; justify-content: center; border-left: 4px solid rgb(174, 138, 190); background-color: rgb(241, 238, 238); margin: 6px;}
+.object3 {grid-area:object3; display: flex; align-items: center; justify-content: center; border-left: 4px solid rgb(174, 138, 190); background-color: rgb(241, 238, 238); margin: 6px;}
+.object4 {grid-area:object4; display: flex; align-items: center; justify-content: center; border-left: 4px solid rgb(174, 138, 190); background-color: rgb(241, 238, 238); margin: 6px;}
+.object5 {grid-area:object5; display: flex; align-items: center; justify-content: center; border-left: 4px solid rgb(174, 138, 190); background-color: rgb(241, 238, 238); margin: 6px;}
+.object6 {grid-area:object6; display: flex; align-items: center; justify-content: center; border-left: 4px solid rgb(174, 138, 190); background-color: rgb(241, 238, 238); margin: 6px;}

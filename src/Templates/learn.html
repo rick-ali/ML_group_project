@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<article>
+  pages main content
+</article>
+<aside>
+  Side bars or other less useful content
+</aside>
+<h1>Learning Page</h1>
+{{ request.user }}
+{{ request.user.is_authenticated }}
+
+{% endblock %}

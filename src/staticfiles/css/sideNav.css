@@ -1,0 +1,6 @@
+/* Sidebar/left column */
+.sidenav {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #56E3D4; /* Greenish background color */
+  padding: 20px; /* Some padding */
+}

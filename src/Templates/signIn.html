@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link href="{% static "css/signIn.css" %}" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <form method="" action="">
+      <div class="form_wrapper">
+      <div class="logo_container">Learn ML</div>
+      <div class="form_title">Login</div>
+      <div class="inputs_holder"><input type="text" name="Username" placeholder="Username"></div>
+      <div class="inputs_holder"><input type="text" name="Password" placeholder="Password"></div>
+      <div class="form_submit_btn"><button class="btn">Login</button></div>
+      <div class="login_link"><p>Not have an account?    <a href="{% url 'sign up page' %}">Sign up</a></p></div>
+
+      </div>
+    </form>
+  </body>
+</html>
